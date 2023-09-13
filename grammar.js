@@ -88,6 +88,7 @@ module.exports = grammar({
                 reservedWord("update"),
                 reservedWord("delete"),
                 reservedWord("select"),
+                reservedWord("with"),
             ),
             /[^;]*/,
             ';'
