@@ -4,11 +4,13 @@ module.exports = grammar({
     word: $ => $.identifier,
 
     rules: {
-        source_file: $ => seq(
-            $.module_stmt,
-            $.dialect_stmt,
-            repeat(choice($.schema_fn, $.query_fn, $.table))
-        ),
+        source_file: $ => repeat(choice(
+                $.module_stmt,
+                $.dialect_stmt,
+                $.schema_fn,
+                $.query_fn,
+                $.table
+        )),
 
         module_stmt: $ => seq(
             'module',
@@ -113,7 +115,6 @@ function commaSep(rule) {
 }
 
 function reservedWord(word) {
-    //return word // when debuging
     return alias(reserved(caseInsensitive(word)), word)
 }
 

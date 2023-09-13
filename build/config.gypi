@@ -400,7 +400,7 @@
     "standalone_static_library": 1,
     "userconfig": "/home/parantapa/.npmrc",
     "cache": "/home/parantapa/.npm",
-    "local_prefix": "/home/parantapa/workspace/sqlpygen3/tree-sitter-sqlpygen",
+    "local_prefix": "/home/parantapa/workspace/tree-sitter-sqlpygen",
     "globalconfig": "/home/parantapa/miniconda3/envs/sqlpygen/etc/npmrc",
     "init_module": "/home/parantapa/.npm-init.js",
     "prefix": "/home/parantapa/miniconda3/envs/sqlpygen",

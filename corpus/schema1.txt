@@ -1,9 +1,6 @@
-============
-Schema Lower
-============
-
-module example1
-dialect sqlite3
+===================
+Schema 1: Lowercase
+===================
 
 schema table_stocks
 create table stocks (
@@ -18,8 +15,6 @@ create table stocks (
 ---
 
 (source_file
-    (module_stmt (identifier))
-    (dialect_stmt (identifier))
     (schema_fn (identifier) (schema_sql))
 )
 

@@ -1,19 +1,6 @@
-===========================
-Query returning anon table
-===========================
-
-module example1
-dialect sqlite3
-
-schema table_stocks
-CREATE TABLE stocks (
-    date text,
-    trans text,
-    symbol text,
-    qty real,
-    price real
-) ;
-
+=============================
+Query 3: returning anon table
+=============================
 
 query select_from_stocks() -> (date: str, trans: str, symbol: str, qty: float, price: float)
 SELECT * FROM stocks ;
@@ -21,9 +8,6 @@ SELECT * FROM stocks ;
 ---
 
 (source_file
-    (module_stmt (identifier))
-    (dialect_stmt (identifier))
-    (schema_fn (identifier) (schema_sql))
     (query_fn
         (identifier)
         (fields)

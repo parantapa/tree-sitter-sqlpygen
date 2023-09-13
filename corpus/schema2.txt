@@ -1,9 +1,6 @@
-============
-Schema Upper
-============
-
-module example1
-dialect sqlite3
+===================
+Schema 2: Uppercase
+===================
 
 schema table_stocks
 CREATE TABLE stocks (
@@ -14,12 +11,9 @@ CREATE TABLE stocks (
     price real
 ) ;
 
-
 ---
 
 (source_file
-    (module_stmt (identifier))
-    (dialect_stmt (identifier))
     (schema_fn (identifier) (schema_sql))
 )
 

@@ -3,37 +3,32 @@
   "word": "identifier",
   "rules": {
     "source_file": {
-      "type": "SEQ",
-      "members": [
-        {
-          "type": "SYMBOL",
-          "name": "module_stmt"
-        },
-        {
-          "type": "SYMBOL",
-          "name": "dialect_stmt"
-        },
-        {
-          "type": "REPEAT",
-          "content": {
-            "type": "CHOICE",
-            "members": [
-              {
-                "type": "SYMBOL",
-                "name": "schema_fn"
-              },
-              {
-                "type": "SYMBOL",
-                "name": "query_fn"
-              },
-              {
-                "type": "SYMBOL",
-                "name": "table"
-              }
-            ]
+      "type": "REPEAT",
+      "content": {
+        "type": "CHOICE",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "name": "module_stmt"
+          },
+          {
+            "type": "SYMBOL",
+            "name": "dialect_stmt"
+          },
+          {
+            "type": "SYMBOL",
+            "name": "schema_fn"
+          },
+          {
+            "type": "SYMBOL",
+            "name": "query_fn"
+          },
+          {
+            "type": "SYMBOL",
+            "name": "table"
           }
-        }
-      ]
+        ]
+      }
     },
     "module_stmt": {
       "type": "SEQ",
